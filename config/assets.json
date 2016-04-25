@@ -1,0 +1,36 @@
+{
+     "lib": {
+         "css": {
+             "dest": "assets/css/build/",
+             "src": [
+                  "assets/libs/angular-material/angular-material.css"
+             ]
+         },
+         "js": {
+             "dest": "assets/js/build/",
+             "src": [
+               "assets/libs/angular/angular.js",
+               "assets/libs/angular-ui-router/release/angular-ui-router.js",
+               "assets/libs/angular-animate/angular-animate.js",
+               "assets/libs/angular-aria/angular-aria.js",
+               "assets/libs/angular-material/angular-material.js"
+             ]
+         }
+     },
+     "core": {
+         "css": {
+             "dest": "assets/css/build/",
+             "src": [
+             ]
+         },
+         "js": {
+            "dest": "assets/js/build/",
+             "src": [
+               "app/app.js",
+              "app/resume/Resume.js",
+              "app/resume/routes/ResumeRoutes.js"
+
+              ]
+         }
+     }
+ }

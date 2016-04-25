@@ -1,0 +1,24 @@
+{
+  "name": "go-with-node-angular-material",
+  "version": "1.0.0",
+  "description": "angular gulp best practices ",
+  "main": "server.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "gowthaman@ideas2it.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^3.2.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-inject": "^4.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "lazy.js": "^0.4.2"
+  }
+}

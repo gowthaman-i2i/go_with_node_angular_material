@@ -1,0 +1,9 @@
+
+node_modules/
+npm-debug.log
+bower_components/*
+assets/libs/*
+.project
+assets/css/build/
+assets/js/build/
+assets/templates.js
