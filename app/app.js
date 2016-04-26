@@ -1,3 +1,8 @@
 (function() {
-    angular.module('app', ['ui.router','ngMaterial', 'app.resume'])
+    angular.module('app', ['ui.router', 'ngMaterial', 'app.resume']).config(function($mdThemingProvider) {
+        $mdThemingProvider.theme('dark-grey').backgroundPalette('grey').dark();
+        $mdThemingProvider.theme('dark-orange').backgroundPalette('orange').dark();
+        $mdThemingProvider.theme('dark-purple').backgroundPalette('deep-purple').dark();
+        $mdThemingProvider.theme('dark-blue').backgroundPalette('blue').dark();
+    });
 })();

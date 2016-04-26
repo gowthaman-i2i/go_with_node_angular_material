@@ -16,14 +16,18 @@
         .config(config);
         config.$inject = [
             '$stateProvider',
+            '$urlRouterProvider'
         ];
 
-    function config ($stateProvider) {
+    function config ($stateProvider,$urlRouterProvider) {
+       $urlRouterProvider.otherwise("/");
 
         $stateProvider
             .state('resume', {
                 url: '/',
-                templateUrl: '/resume/views/resume.html'
+                templateUrl: 'app/resume/views/resume.html',
+                controller:'ResumeController',
+                controllerAs: 'resumCtrl'
 
             });
     }

@@ -27,7 +27,8 @@
             "dest": "assets/js/build/",
              "src": [
                "app/app.js",
-              "app/resume/Resume.js",
+               "app/resume/Resume.js",
+               "app/resume/controllers/ResumeController.js",
               "app/resume/routes/ResumeRoutes.js"
 
               ]
