@@ -1,79 +1,109 @@
-vcv <pre>{{resumCtrl.showDarkTheme }}</pre>
-<div ng-cloak >
-  <md-content class="md-padding" layout-xs="column" layout="row">
-    <div flex-xs flex-gt-xs="50" layout="column">
-      <md-card md-theme="{{ resumCtrl.showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Large</span>
-          </md-card-title-text>
-          <md-card-title-media>
-            <div class="md-media-lg card-media"></div>
-          </md-card-title-media>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button>Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </md-card-actions>
-      </md-card>
-      <md-card md-theme="{{ resumCtrl.showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Extra Large</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content layout="row" layout-align="space-between">
-          <div class="md-media-xl card-media"></div>
-          <md-card-actions layout="column">
-            <md-button class="md-icon-button" aria-label="Favorite">
-              <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Settings">
-              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Share">
-              <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
-            </md-button>
-          </md-card-actions>
-        </md-card-content>
-      </md-card>
+<div>
+    <div layout="row" layout-padding>
+        <div flex="10"></div>
+        <div layout="row" flex class="md-whiteframe-z2">
+            <div flex="20" layout="column" layout-padding style="background-color:#3C474D;color:white;font-size:12px">
+
+                <div class="md-media-lg card-media  p-23" layout="row" layout-align="center center" style="background-color:#2A3338; ">
+                    <img alt="Gowthaman" class="img-rounded-50" src="https://avatars2.githubusercontent.com/u/3445446?v=3&u=e3c92e510fd5ba9245621db508d4421624ec54ca&s=140">
+                </div>
+
+                <md-card-content>
+                    <md-card-header>
+                        <md-card-header-text>
+                            <h2 class="md-title">About Me</h2>
+                        </md-card-header-text>
+                    </md-card-header>
+
+                    <p>
+                        A passionate Blogger and Developer. He has more then 3 years of experience on web application development. He loves to work in javascript programming language.At present he is exploring W3C Web Component specification.
+                    </p>
+                </md-card-content>
+                <md-card-content>
+                    <h2 class="md-title">Contact Me</h2>
+                    <div layout>
+                        <div flex="20" layout layout-align="left center">
+                            <span class="md-body-1 md-primary">Email</span>
+                        </div>
+                        <span flex class="md-primary" layout-align="left center">
+                                          gowthaman@ideas2it.com
+                                      </span>
+                    </div>
+                    <div layout>
+                        <div flex="20" layout layout-align="left center">
+                            <span class="md-body-1 md-primary">Office</span>
+                        </div>
+                        <span flex class="md-primary" layout-align="left center">
+                                          ideas2it
+                                      </span>
+                    </div>
+                </md-card-content>
+                <md-card-content>
+                    <h2 class="md-title">Skills</h2>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center">
+                            <span class="md-body-1 md-primary">JavaScript</span>
+                        </div>
+                        <md-slider flex ng-model="80" min="1" max="100" class="md-primary">
+                        </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center">
+                            <span class="md-body-1 md-warn">AngularJS</span>
+                        </div>
+                        <md-slider flex ng-model="90" min="1" max="100" class="md-warn">
+                        </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center">
+                            <span class="md-body-1 md-primary">Jquery</span>
+                        </div>
+                        <md-slider flex ng-model="70" min="1" max="100" class="md-primary">
+                        </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center">
+                            <span class="md-body-1 md-warn">CSS</span>
+                        </div>
+                        <md-slider flex ng-model="60" min="1" max="100" class="md-warn">
+                        </md-slider>
+                    </div>
+                    <div layout>
+                        <div flex="40" layout layout-align="center center">
+                            <span class="md-body-1 md-primary">Java</span>
+                        </div>
+                        <md-slider flex ng-model="50" min="1" max="100" class="md-primary">
+                        </md-slider>
+                    </div>
+                </md-card-content>
+
+            </div>
+            <div flex="80" layout="column" layout-padding>
+                <img alt="Education" src="image/table-chair.jpg">
+                <md-card-content>
+                    <h2 class="md-title"> PROFILE SUMMARY </h2>
+                                <md-list>
+                                 <md-list-item>
+                                  <p class="md-list-item-text">3 years of working knowledge in the development of enterprise application and Web application in Agile methodologies</p>
+                                  </md-list-item>
+                                  <md-divider></md-divider>
+                                 <md-list-item>
+                                   <p class="md-list-item-text">Working knowledge in Web technologies like Nodejs, Angularjs, Html, css, and javascript</p>
+                                   </md-list-item>
+                                  <md-divider></md-divider>
+                                  <md-list-item>
+                                    <p class="md-list-item-text">Strong software developing expertise including designing and programming of server/client side components.</p>
+                                    </md-list-item>
+                                   <md-divider></md-divider>
+                                   <md-list-item>
+                                     <p class="md-list-item-text">Sound Knowledge in database like MongoDB, MySQL.</p>
+                                     </md-list-item>
+                                    <md-divider></md-divider>
+                              </md-list>
+                </md-card-content>
+
+            </div>
+        </div>
+        <div flex="10">
+        </div>
     </div>
-    <div flex-xs flex-gt-xs="50" layout="column">
-      <md-card md-theme="{{ resumCtrl.showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Small</span>
-          </md-card-title-text>
-          <md-card-title-media>
-            <div class="md-media-sm card-media"></div>
-          </md-card-title-media>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button>Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </md-card-actions>
-      </md-card>
-      <md-card md-theme="{{ resumCtrl.showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Medium</span>
-          </md-card-title-text>
-          <md-card-title-media>
-            <div class="md-media-md card-media"></div>
-          </md-card-title-media>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button>Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </md-card-actions>
-      </md-card>
-      <div layout layout-padding layout-align="center end" style="height:200px">
-        <md-checkbox ng-model="resumCtrl.showDarkTheme">Use 'Dark' Themed Cards</md-checkbox>
-      </div>
-    </div>
-  </md-content>
-</div>

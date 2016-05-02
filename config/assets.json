@@ -3,7 +3,8 @@
          "css": {
              "dest": "assets/css/build/",
              "src": [
-                  "assets/libs/angular-material/angular-material.css"
+                  "assets/libs/angular-material/angular-material.css",
+                  "assets/css/custome.css"
              ]
          },
          "js": {
